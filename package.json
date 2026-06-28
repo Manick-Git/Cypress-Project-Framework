@@ -1,0 +1,24 @@
+{
+  "name": "cypress-project-framework",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Manick-Git/Cypress-Project-Framework#readme",
+  "bugs": {
+    "url": "https://github.com/Manick-Git/Cypress-Project-Framework/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manick-Git/Cypress-Project-Framework.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^15.18.0"
+  }
+}
