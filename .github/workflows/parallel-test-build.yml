@@ -1,4 +1,4 @@
-name: Regression End-to-end tests
+name: Regression End-to-end tests run in parallel
 on: push
 jobs:
   Add-ToCart-run:
