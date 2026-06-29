@@ -10,7 +10,23 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+import '@cypress/xpath';
+import { homePage } from '../pages/homePage';
+
+const homeobj = new homePage()
+
+Cypress.Commands.add('login', (email, password) => { 
+    cy.visit('/')
+
+    homeobj.navigatetoLogin()
+
+    //cy.get('//span[normalize-space()="My Account"]').click({ force: true })
+    //cy.get('//a[normalize-space()="Login"]').click()
+
+    cy.get('#input-email').type(email)
+    cy.get('#input-password').type(password)
+    cy.get('input.btn.btn-primary').click()
+    })
 //
 //
 // -- This is a child command --
